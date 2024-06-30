@@ -15,7 +15,7 @@ function Root() {
           <Outlet />
         </div>
       </Content>
-      <Footer style={{ textAlign: "center" }}>Developed by MMITDEV.</Footer>
+      <Footer style={{ textAlign: "center",  backgroundColor: "#fff" }}>Developed by MMITDEV.</Footer>
     </Layout>
   );
 }

@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import { Menu, Drawer, Button, MenuProps } from "antd";
+import { Menu, Drawer, Button, MenuProps, Typography } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { useMediaQuery } from "react-responsive";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { HomeOutlined, SettingOutlined } from "@ant-design/icons";
+import { Routes } from "../../constants";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
+const { Text } = Typography;
+
 const items: MenuItem[] = [
   {
-    label: "Home",
-    key: "/",
+    label: Routes.home.label,
+    key: Routes.home.route,
     icon: <HomeOutlined />,
   },
   {
-    label: "Setting",
-    key: "/setting",
+    label: Routes.setting.label,
+    key: Routes.setting.route,
     icon: <SettingOutlined />,
   },
 ];
@@ -37,6 +40,7 @@ const Navigation: React.FC = () => {
 
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
+    onClose();
     navigate(e.key)
   };
 
@@ -53,8 +57,8 @@ const Navigation: React.FC = () => {
     <>
       {isMobile ? (
         <>
-          <Button type="primary" onClick={showDrawer}>
-            <MenuOutlined />
+          <Button type="text" onClick={showDrawer}>
+            <MenuOutlined /> <Text type="success">Interview Cheat Sheet</Text>
           </Button>
           <Drawer
             title="Menu"
