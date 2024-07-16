@@ -3,7 +3,7 @@ import { Menu, Drawer, Button, MenuProps, Typography } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { useMediaQuery } from "react-responsive";
 import { useLocation, useNavigate } from "react-router-dom";
-import { HomeOutlined, SettingOutlined } from "@ant-design/icons";
+import { HomeOutlined } from "@ant-design/icons";
 import { Routes } from "../../constants";
 
 type MenuItem = Required<MenuProps>["items"][number];
