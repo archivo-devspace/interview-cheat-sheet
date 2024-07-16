@@ -1,0 +1,32 @@
+.card {
+  cursor: pointer;
+}
+
+
+
+
+/* Default width for mobile devices */
+.filter {
+  width: 135px;
+}
+
+/* For screens larger than 768px (tablets and larger) */
+@media (min-width: 768px) {
+  .filter {
+    width: 300px;
+  }
+}
+
+/* For screens larger than 1024px (desktops and larger) */
+@media (min-width: 1024px) {
+  .filter {
+    width: 400px;
+  }
+}
+
+/* For screens larger than 1440px (large desktops and larger) */
+@media (min-width: 1440px) {
+  .filter {
+    width: 500px;
+  }
+}

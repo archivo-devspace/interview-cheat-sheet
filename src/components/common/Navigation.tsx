@@ -16,11 +16,11 @@ const items: MenuItem[] = [
     key: Routes.home.route,
     icon: <HomeOutlined />,
   },
-  {
-    label: Routes.setting.label,
-    key: Routes.setting.route,
-    icon: <SettingOutlined />,
-  },
+  // {
+  //   label: Routes.setting.label,
+  //   key: Routes.setting.route,
+  //   icon: <SettingOutlined />,
+  // },
 ];
 
 const Navigation: React.FC = () => {

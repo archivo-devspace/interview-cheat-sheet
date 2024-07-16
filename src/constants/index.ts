@@ -1,4 +1,5 @@
 import { Lang } from "./lang";
-import {Routes} from "./route"
+import { Routes } from "./route";
+import { Category } from "./data";
 
-export { Lang, Routes };
+export { Lang, Routes, Category };
