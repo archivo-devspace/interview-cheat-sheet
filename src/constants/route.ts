@@ -1,10 +1,12 @@
 export const Routes = {
   home: {
-    route: "/",
+    route: "",
     label: "Home",
   },
   setting: {
-    route: "/setting",
+    route: "setting",
     label: "Setting",
   },
 };
+
+export const PROJECT_BASE_URL = "/interview-cheat-sheet/"
