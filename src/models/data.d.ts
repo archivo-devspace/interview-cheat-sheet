@@ -5,4 +5,5 @@ export interface Resource {
   title: string;
   ques: string;
   category: Category;
+  isAdvanced: boolean?;
 }

@@ -2,12 +2,15 @@ import {
   Badge,
   Card,
   Col,
+  Divider,
+  Flex,
   GetProps,
   Input,
   Modal,
   Row,
   Select,
   Space,
+  Tag,
   Typography,
 } from "antd";
 import { useEffect, useState } from "react";
@@ -19,10 +22,12 @@ import styles from "./style.module.css";
 const loadLang = async () => {
   const lang = localStorage.getItem(Lang.Key);
 
-  let data = await import("../../../public/data/my.json");
+  let data;
 
   if (lang) {
     data = await import(`../../../public/data/${lang}.json`);
+  } else {
+    data = await import("../../../public/data/my.json");
   }
 
   return data.default;
@@ -149,7 +154,7 @@ function Home() {
             style={{
               display: "flex",
               justifyContent: "space-between",
-              marginBottom: "30px",
+              marginBottom: "10px",
             }}
           >
             <Select
@@ -175,15 +180,22 @@ function Home() {
             />
           </Space>
         </Col>
+        <Col span={24}>
+          <Divider orientation="left">Color Definition</Divider>
+          <Flex gap="4px 0" wrap>
+            <Tag color="red">Advanced</Tag>
+            <Tag color="green">Normal</Tag>
+          </Flex>
+        </Col>
         {renderResources &&
           Object.keys(renderResources).map((k) => (
             <Col key={k} xs={24} md={12}>
               <Badge.Ribbon
                 text={renderResources[k].category.toUpperCase()}
-                color="green"
+                color={renderResources[k].isAdvanced ? "red" : "green"}
               >
                 <Card
-                className={styles.card}
+                  className={styles.card}
                   title={<Text>{renderResources[k].title}</Text>}
                   onClick={() => {
                     setDetails(renderResources[k]);

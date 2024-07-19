@@ -3,8 +3,9 @@ import { Menu, Drawer, Button, MenuProps, Typography } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { useMediaQuery } from "react-responsive";
 import { useLocation, useNavigate } from "react-router-dom";
-import { HomeOutlined, SettingOutlined } from "@ant-design/icons";
+import { HomeOutlined } from "@ant-design/icons";
 import { Routes } from "../../constants";
+import { PROJECT_BASE_URL } from "../../constants/route";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -13,12 +14,12 @@ const { Text } = Typography;
 const items: MenuItem[] = [
   {
     label: Routes.home.label,
-    key: Routes.home.route,
+    key: PROJECT_BASE_URL + Routes.home.route,
     icon: <HomeOutlined />,
   },
   // {
   //   label: Routes.setting.label,
-  //   key: Routes.setting.route,
+  //   key: PROJECT_BASE_URL + Routes.setting.route,
   //   icon: <SettingOutlined />,
   // },
 ];
@@ -28,7 +29,7 @@ const Navigation: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const location = useLocation();
   const navigate = useNavigate();
-  const [current, setCurrent] = useState(location.pathname);
+  const [current, setCurrent] = useState(`${location.pathname}`);
 
   const showDrawer = () => {
     setVisible(true);

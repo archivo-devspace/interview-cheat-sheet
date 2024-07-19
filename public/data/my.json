@@ -1,9 +1,94 @@
 {
   "d_1": {
     "id": 1,
-    "title": "ခေါင်းစဉ် ၁",
-    "ques": "Please introduce yourself with your birth place, age, education, career and how do you get in IT industry?",
-    "ans": "added 3 packages, and audited 293 packages in 10s. added 3 packages, and audited 293 packages in 10s. added 3 packages, and audited 293 packages in 10s , added 3 packages, and audited 293 packages in 10s, added 3 packages, and audited 293 packages in 10s . added 3 packages, and audited 293 packages in 10s.",
+    "title": "ကိုယ့်ကိုကိုယ် မိတ်ဆက်",
+    "ques": "ကိုယ့်ကိုကိုယ် မွေးဖွားရာ ဇာတိအပါအဝင် ပညာအရည်အချင်း ၊ IT အလုပ် ဘယ်လို ရွေးချယ်လုပ်ကိုင်ဖြစ်လဲ အကျဉ်းချုပ် ပြောပေးပါ။",
     "category": "Hr"
+  },
+  "d_2": {
+    "id": 2,
+    "title": "ဘာကြောင့်မို့ အလုပ်ရှာနေတာလဲ။",
+    "ques": "ဘယ်လိုမျိုး အကြောင်းအရင်းကြောင့် ခုလို အလုပ်ရှာတာလဲ။ ပြီးတော့ ခု ဒီအလုပ်ကို ဘယ်ကနေ တွေ့မိပြီး ဘာကြောင့် လျှောက်ဖြစ်တာလဲ။",
+    "category": "Hr"
+  },
+  "d_3": {
+    "id": 3,
+    "title": "Project အတွေ့အကြုံများ",
+    "ques": "လုပ်ခဲ့ဖူးတဲ့ project များ အကြောင်း ပြောလို့ရသလောက် ပြောပြပေးပါ။",
+    "category": "SoftwareDev"
+  },
+  "d_4": {
+    "id": 4,
+    "title": "Team size အကြောင်း",
+    "ques": "Team size member ဘယ်လောက်များများနဲ့ အလုပ်လုပ်ခဲ့ဖူးပါသလဲ။ ဘယ်လိုမျိုးနေရာတွေကနေ ပါဝင်ခဲ့ရပါသလဲ။ ဥပမာ - Team Lead လိုမျိုး လုပ်ခဲ့ရတာလား။",
+    "category": "Hr"
+  },
+  "d_5": {
+    "id": 5,
+    "title": "သင့်ရဲ့ ကောင်းမွန်တဲ့ Soft skills",
+    "ques": "သင့်မှာရှိတဲ့ ကောင်းမွန်တဲ့ soft skills တွေက ဘာဖြစ်မလဲ။",
+    "category": "Hr"
+  },
+  "d_12": {
+    "id": 12,
+    "title": "သင့်ရဲ့ အားနည်းတဲ့ Soft skills",
+    "ques": "သင့်မှာရှိတဲ့ အားနည်းချက် တွေက ဘာဖြစ်မလဲ။",
+    "category": "Hr"
+  },
+  "d_6": {
+    "id": 6,
+    "title": "အလုပ်သစ်အတွက် အစီအစဉ်",
+    "ques": "ခု အလုပ်သစ်အတွက် ဘယ်လိုမျိုး goals တွေ စီစဉ်ထားလဲ။ ပြီးတော့ အနည်းဆုံး ဘယ်လောက်ကြာအောင် လုပ်နိုင်မလဲ။",
+    "category": "Hr"
+  },
+  "d_7": {
+    "id": 7,
+    "title": "အလုပ်နဲ့ ပတ်သတ်တဲ့ နည်းပညာတွေ အကြောင်း",
+    "ques": "Web နဲ့ ပတ်သက်တဲ့ နည်းပညာ အကြောင်းများ မေးမြန်းခြင်း။ ဥပမာ - React life cycle, hooks, state management, react ui framework like MUI, Next.js, Express.js",
+    "category": "SoftwareDev"
+  },
+  "d_8": {
+    "id": 8,
+    "title": "Database အကြောင်း",
+    "ques": "Database နဲ့ ပတ်သက်၍ မေးမြန်းခြင်း။ ဥပမာ - About relational database, RDBMS indexing, Normalization",
+    "category": "SoftwareDev"
+  },
+  "d_9": {
+    "id": 9,
+    "title": "Clean Code အကြောင်း",
+    "ques": "Clean Code ဆိုတာကို ဘယ်လို နားလည်လဲ။ ဘယ်လိုမျိုး သိလာတာလဲ။ ရှင်းပြပေးပါ။",
+    "category": "SoftwareDev",
+    "isAdvanced" : true
+  },
+  "d_10": {
+    "id": 10,
+    "title": "Design Patterns မေးခွန်းများ",
+    "ques": "အသုံးများတဲ့ Design Patterns များကို မေးမြန်းခြင်း။ ဥပမာ - Singleton Pattern, Dependency Injection",
+    "category": "SoftwareDev",
+    "isAdvanced" : true
+  },
+  "d_11": {
+    "id": 11,
+    "title": "IT အလုပ်နဲ့ ပတ်သက်ပြီး အနာဂတ် ရည်မှန်းချက်",
+    "ques": "IT နဲ့ လုပ်ကိုင်ရင်း အနာဂတ်မှာ ဘယ်လိုအခြေအနေမျိုးထိ ဖြစ်လာနိုင်ဖို့ ရည်မှန်းချက်ရှိလဲ။",
+    "category": "Hr"
+  },
+  "d_13": {
+    "id": 13,
+    "title": "ဘာက ပိုအရေးကြီးလဲ။",
+    "ques": "သင့်အတွက် Good and Skillful Team member, လစာ, နည်းပညာ အဲ့ဒီအရာတွေကို အရေးကြီးဆုံးကနေ စပြီး order စီခိုင်းရင် ဘယ်လိုစီမှာလဲ။ ဘာကြောင့်လဲ။",
+    "category": "Hr"
+  },
+  "d_14": {
+    "id": 14,
+    "title": "သင့်ရဲ့ အလုပ်လုပ်လေ့ရှိတဲ့ ပုံစံ",
+    "ques": "အလုပ်လုပ်တဲ့အခါမှာ Project Manager, Business Analysis အစရှိတဲ့သူတွေနဲ့ ဘယ်လိုမျိုး တွဲဖက် လုပ်လေ့ရှိလဲ။",
+    "category": "SoftwareDev"
+  },
+  "d_15": {
+    "id": 15,
+    "title": "သင့်ရဲ့ အချိန် စီမံခန့်ခွဲမှု",
+    "ques": "အလုပ်လုပ်တဲ့အခါမှာ Timeline မှီအောင် လုပ်နိုင်လား။ လုပ်နိုင်တယ်ဆို ဘယ်လိုမျိုး Task and Time management လုပ်လေ့ရှိလဲ။",
+    "category": "SoftwareDev"
   }
 }
